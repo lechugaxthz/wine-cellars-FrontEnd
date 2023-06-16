@@ -1,14 +1,16 @@
 import { createReducer, on } from "@ngrx/store"
+import DetailWine from "../../interfaces/detailWine.interface"
 
 
-export const detailWineInitialState = {
+const detailWineInitialState: DetailWine = {
     /* vista detail Wines */
+    wineId: '',
     detailWine: {},
     wineSuggestions: [],
     wineCellarOfDetailWine: {}
 
 }
 
-export const globalReducer = createReducer(
+export const globaldetailWReducer = createReducer(
     detailWineInitialState,
 )

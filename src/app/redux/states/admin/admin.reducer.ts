@@ -1,7 +1,8 @@
 import { createReducer, on } from "@ngrx/store"
+import { Admin } from "../../interfaces/admin.interface"
 
 
-export const adminInitialState = {
+const adminInitialState: Admin = {
     /* admin View */
     page: {
         page: 0,
@@ -13,6 +14,6 @@ export const adminInitialState = {
 
 }
 
-export const globalReducer = createReducer(
+export const globalAdminReducer = createReducer(
     adminInitialState,
 )
